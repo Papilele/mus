@@ -1,0 +1,36 @@
+@import "../../styles/variables/colors.scss";
+
+.home {
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        
+    }
+
+    &__content {
+        position: absolute;
+        top: 30%;
+        right: 0;
+        width: 400px;
+    }
+    &__title {
+        font-size: 50px;
+        background-color:rgba(0,0,0,0.2);
+    }
+
+    &__text {
+        background-color:rgba(0,0,0,0.4);
+    }
+
+    &__button {
+        background-color: rgba(0,0,0,0.6);
+        font-size: 24px;
+        text-decoration: underline;
+    }
+}
+
+video {
+    
+    height: 680px;
+}

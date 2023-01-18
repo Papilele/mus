@@ -1,0 +1,52 @@
+@import '../../styles/variables/colors.scss';
+
+.header {
+    
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        justify-content: space-between;
+    }
+
+    &__search {
+        &:hover {
+            cursor:pointer;
+        }
+
+        background-color: #323232;
+        padding-left: 10px;
+        height: 55%;
+        border: none;
+        border-radius: 15px;
+        color: $colorWhite;
+    }
+
+    &__bar {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        //border: 2px dashed $colorWhite;
+        font-size: 24px;
+        width: 150px;
+        font-weight: 100;
+    }
+}
+
+.bar {
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        &:last-child::before {
+            content: '|';
+            margin-right: 30px;
+        }
+    }
+}

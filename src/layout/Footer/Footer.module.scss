@@ -1,0 +1,50 @@
+@import '../../styles/variables/colors.scss';
+
+.footer {
+    a {
+        color: #6f6f6f;
+        transition: all 0.25s ease;
+        &:hover {
+            color: $colorWhite;
+        }
+    }
+    color: #5a5a5a;
+    font-weight: 100;
+
+
+    &__line {
+        height: 1px;
+        background-color: #323232;
+    }
+
+    &__copyright {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: default;
+        margin: 15px 0;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        
+        a img {
+            width: 24px;
+            height: 24px;
+            
+        }
+
+
+    }
+
+    &__bar {
+        margin: 15px 0;
+
+    }
+}
